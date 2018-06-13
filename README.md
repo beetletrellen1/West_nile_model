@@ -1,49 +1,46 @@
-[Kaggle Scripts](https://www.kaggle.com/c/predict-west-nile-virus/scripts) are a great way to share models, visualizations, or analyses with other Kagglers.
+# West_Nile_Model Virus Prediction
 
-You can run scripts right on Kaggle without ever downloading the data, but for iterating on your script, you'll probably find it's easier to work locally (and then copy your script to Kaggle for sharing).
+### Notebook 00 - Training-Test Data.ipynb
+    - Data Processing
+    - Modeling
+    - Evaluation
+    - Executive Summary
 
-## Directory Structure
+### Notebook 01 - Weather Notebook.ipynb
+    - Data Cleaning
+    - Data Engineering
+    - Saved for use in training data
+    
+### Notebook 02 - Spray.ipynb
+    - Viewing information from the spray data
+    
+### Notebook 03 - Graphing Notebook.ipynb
+    - Contain graphs of various comparisons
 
-It helps to set up the same directory structure that we have running on Kaggle. (Then you don't have to change any paths when copying the script to Kaggle.) [This file](https://www.kaggle.com/c/predict-west-nile-virus/download/west_nile.zip) sets up the directory structure (including all of the competition data):
+#### Assets
+    - noaa_weather_qclcd_documentation.pdf --> information used to break down csv
+    - sampleSubmission.csv --> csv used to push through to kaggle
+    - spray.csv --> Data gathered
+    - test.csv --> Data gathered, Data to be tested.
+    - test_data_transformed.csv --> Data engineered, merged with weather data, Data to be tested
+    - train.csv --> Data gathered, used for predictive model
+    - train_data_transformed.csv --> Data engineered, merged with weather data
+    - weather.csv3 --> Data gathered
+    - weather_station_avg.csv --> Engineered data, used for predictive model
 
-- `input`: this contains all of the data files for the competition
-- `working`: on Kaggle, scripts run with this as the working directory. We recommend you do the same thing locally to avoid mixing output files with source files.
-- `src`: Source scripts. We've provided some examples to get you started.
+#### Map Data
+    - mapdata_copyright_openstreetmap_contributors.rds
+    - mapdata_copyright_openstreetmap_contributors.txt
+    - output.html
 
-## Python and R Environments
+#### Old Notebook
+    - Start-Notebook.ipynb --> scratch notebook used for basic data review
 
-We have Github repositories showing our [R](https://github.com/Kaggle/docker-r) and [Python](https://github.com/Kaggle/docker-python) environments are set up. We plan to make it very easy to work with the exact same environment locally, but at this point it may be easier to work with whatever environment you already have. (If you use Python or R packages locally that turn out to be missing in our online environment, we can probably add them for you.)
+#### Submissions
+    - Each submission with adjusted models
+    - Second name describes the model used
+    - Randomforest6 is current best model.
 
-Do make sure you're using Python 3, though. 
-
-[Conda](http://conda.pydata.org/docs/intro.html) is great for managing Python environments.
-
-## RMarkdown
-
-If `src/measurement_locations.Rmd` is the RMarkdown file you want to render as HTML, you can say:
-
-`Rscript render_rmarkdown.R src/measurement_locations.Rmd`
-
-Then open `working/output.html` to view the results!
-
-## Command Line Execution
-
-In your shell, you can navigate to the `working` directory, and run a script by saying:
-
-`Rscript ../src/measurement_locations.R`
-
-or
-
-`python ../src/measurement_locations.py`
-
-# R
-
-We all love RStudio for interactive work. If you open a script in `src` in RStudio, your working directory will probably default to `src`. So we've included a line in the example that switches you to `working` at the top of the script.
-
-
-# Python
-
-While we don't support iPython Notebooks in Scripts at this point, we know many people like to work in notebooks interactively. We've included an example notebook. The comments indicate the couple small changes required for transitioning to a script.
 
 
 
