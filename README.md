@@ -18,13 +18,17 @@
     - Contain graphs of various comparisons
 
 #### Assets
+    - chicago_weather_wnv_data.csv --> Combination of Training Data and Weather data
     - noaa_weather_qclcd_documentation.pdf --> information used to break down csv
     - sampleSubmission.csv --> csv used to push through to kaggle
     - spray.csv --> Data gathered
     - test.csv --> Data gathered, Data to be tested.
+    - test_data_nummosquitos.csv --> Predictions using linear regression
+    - test_data_predictions.csv --> Predictions based on Training Data
     - test_data_transformed.csv --> Data engineered, merged with weather data, Data to be tested
     - train.csv --> Data gathered, used for predictive model
     - train_data_transformed.csv --> Data engineered, merged with weather data
+    - train_weather_dateintact.csv --> Maintaining the dates on combination of weather data and training data
     - weather.csv3 --> Data gathered
     - weather_station_avg.csv --> Engineered data, used for predictive model
 
